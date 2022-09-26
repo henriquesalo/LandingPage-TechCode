@@ -1414,6 +1414,7 @@ ol {
 .u-text:not(ul):not(ol):not(p):not(.u-post-content):not(.u-block-content):not(.u-product-desc):not(.u-cart-block-content):not(.u-checkout-block-content) a,
 .u-text:not(ul):not(ol):not(p):not(.u-post-content):not(.u-block-content):not(.u-product-desc):not(.u-cart-block-content):not(.u-checkout-block-content) a:hover {
   text-decoration: none;
+  padding:12%;
 }
 
 .u-link,
