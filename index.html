@@ -1,99 +1,323 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechCode Development</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <header>
-        <nav>
-            <img src="images\logo.png" id="logo" alt="">
-            <div id="menu">
-                <a class="padding">Home</a>
-                <a class="padding">Sobre Nós</a>
-                <a class="padding">Equipe</a>
-                <a class="padding">Projetos</a>
-            </div>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Scripts -->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Cabeçalho e Banner -->
+    <header id="header">
+      <div id="inner-header">
+        <h2 id="brand">TechCode Development</h2>
+        <nav id="navbar">
+          <a href="#header">Início</a>
+          <a href="#expertise-areas">Serviços</a>
+          <a href="#about">Sobre</a>
+          <a href="#team">Time</a>
+          <a href="#contact">Contato</a>
         </nav>
+        <!-- Menu Mobile -->
+        <i class="bi bi-list" id="menu"></i>
+        <nav id="mobile-navbar">
+          <i class="bi bi-x-lg" id="close-menu"></i>
+          <a href="#header">Início</a>
+          <a href="#expertise-areas">Serviços</a>
+          <a href="#about">Sobre</a>
+          <a href="#team">Time</a>
+          <a href="#contact">Contato</a>
+        </nav>
+      </div>
+      <div class="banner active">
+        <span class="square"></span>
+        <h2>Melhores experts em desenvolvimento web do país</h2>
+        <p>
+          Os desenvolvedores mais bem qualificados estão aqui, agende uma reunião e
+          faça seu site conosco !
+        </p>
+      </div>
+      <div class="banner">
+        <span class="square"></span>
+        <h2>Conheça o nosso time</h2>
+        <p>
+          Veja as especialidades dos nossos desenvolvedores, e entenda como eles podem
+          lhe ajudar
+        </p>
+      </div>
+      <div class="banner">
+        <span class="square"></span>
+        <h2>Os nossos resultados</h2>
+        <p>
+          Confira as nossas métricas e conheça os resultados que já obtivemos
+        </p>
+      </div>
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
     </header>
-
-    <section class="index">
-        <section class="home">
-            <div>
-                <img src="images\background-home.png" id="img-home">
-            </div>
-        </section>
-
-        <section class="about">
-            
-            <h1 id="title-about">Sobre Nós</h1>
-           
-            <div class="aboutus">
-                <div class="quem width">
-                    <h3>Quem Somos?</h3>
-                    <p>Lorem ipsum lobortis risus leo dictum dolor dapibus sagittis sociosqu, fusce accumsan justo nam curae habitasse convallis integer nostra, sodales pellentesque blandit turpis sed leo tempus imperdiet. sociosqu pharetra nunc quisque mi scelerisque nisl integer himenaeos, porttitor mauris id placerat lectus porta aliquam sed, lacus mollis aliquam lectus primis pharetra aliquam. adipiscing gravida faucibus turpis hac lorem sodales interdum euismod ut, egestas primis vestibulum faucibus sem pellentesque porta ac pulvinar, potenti eros libero blandit ante pharetra netus hac. nec donec vehicula eget varius sapien laoreet per venenatis egestas proin arcu luctus, aptent fames feugiat habitant porta gravida praesent netus tristique sapien. </p>
-                </div>
-                <div class="oque width">
-                    <h3>Quem Somos?</h3>
-                    <p>Lorem ipsum lobortis risus leo dictum dolor dapibus sagittis sociosqu, fusce accumsan justo nam curae habitasse convallis integer nostra, sodales pellentesque blandit turpis sed leo tempus imperdiet. sociosqu pharetra nunc quisque mi scelerisque nisl integer himenaeos, porttitor mauris id placerat lectus porta aliquam sed, lacus mollis aliquam lectus primis pharetra aliquam. adipiscing gravida faucibus turpis hac lorem sodales interdum euismod ut, egestas primis vestibulum faucibus sem pellentesque porta ac pulvinar, potenti eros libero blandit ante pharetra netus hac. nec donec vehicula eget varius sapien laoreet per venenatis egestas proin arcu luctus, aptent fames feugiat habitant porta gravida praesent netus tristique sapien. </p>
-                </div>
-                <div class="como width">
-                    <h3>Quem Somos?</h3>
-                    <p>Lorem ipsum lobortis risus leo dictum dolor dapibus sagittis sociosqu, fusce accumsan justo nam curae habitasse convallis integer nostra, sodales pellentesque blandit turpis sed leo tempus imperdiet. sociosqu pharetra nunc quisque mi scelerisque nisl integer himenaeos, porttitor mauris id placerat lectus porta aliquam sed, lacus mollis aliquam lectus primis pharetra aliquam. adipiscing gravida faucibus turpis hac lorem sodales interdum euismod ut, egestas primis vestibulum faucibus sem pellentesque porta ac pulvinar, potenti eros libero blandit ante pharetra netus hac. nec donec vehicula eget varius sapien laoreet per venenatis egestas proin arcu luctus, aptent fames feugiat habitant porta gravida praesent netus tristique sapien. </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="team">
-            <h1>Nossa Equipe</h1>
-
-            <img src="">
-            <p id="ceo"></p>
-
-            <img src="">
-            <p id="coo"></p>
-
-            <img src="">
-            <p id="cto"></p>
-
-            <img src="">
-            <p id="cmo"></p>
-        </section>
-
-        <section class="projects">
-            <h1>Projetos</h1>
-
-            <div>
-                <div class="p1"></div>
-                <div class="p2"></div>
-                <div class="p3"></div>
-            </div>
-
-            <a>Ver Mais</a>
-        </section>
+    <!-- Áreas de atuação -->
+    <main id="expertise-areas" class="text-image-section">
+      <div id="expertise-information" class="text-container">
+        <p class="section-subtitle">Áreas de atuação</p>
+        <h3 class="section-title">
+          Nossos especialistas podem ajudar você em Desenvolvimento Web, Desenvolvimento de Games,
+          Apps e até em Design Gráfico.
+        </h3>
+        <a href="#" class="btn">Saiba Mais</a>
+      </div>
+      <div id="expertise-image-container" class="image-container">
+        <i class="bi bi-people"></i>
+        <img
+          src="img/employees_banner.jpg"
+          alt="Advogados da Pearson Hardman"
+        />
+      </div>
+      <div id="other-services">
+        <div class="service">
+          <img src="img/bank.jpg" alt="Banco" />
+          <i class="bi bi-bank"></i>
+          <div class="service-info">
+            <h4>Bancos e Finanças pessoais</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, numquam accusantium! Ex dolores, autem itaque adipisci,
+              facilis quam eligendi consequuntur reprehenderit quas aliquid
+              corrupti quibusdam voluptates. Repellendus suscipit quo veniam?
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <img src="img/construction.jpg" alt="Construção" />
+          <i class="bi bi-bricks"></i>
+          <div class="service-info">
+            <h4>Construção de Imóveis sem escritura</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, numquam accusantium! Ex dolores, autem itaque adipisci,
+              facilis quam eligendi consequuntur reprehenderit quas aliquid
+              corrupti quibusdam voluptates. Repellendus suscipit quo veniam?
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <img src="img/company.jpg" alt="Empresa" />
+          <i class="bi bi-building"></i>
+          <div class="service-info">
+            <h4>Empresas e funcionários</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, numquam accusantium! Ex dolores, autem itaque adipisci,
+              facilis quam eligendi consequuntur reprehenderit quas aliquid
+              corrupti quibusdam voluptates. Repellendus suscipit quo veniam?
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Sobre nós -->
+    <section id="about">
+      <div id="about-text">
+        <p class="section-subtitle">Sobre nós</p>
+        <h3 class="section-title">
+          Uma empresa que tem o foco no cliente, construindo seu site da melhor forma para que
+          consiga os melhores resultados
+        </h3>
+        <div class="about-description">
+          <i class="bi bi-briefcase"></i>
+          <div>
+            <h4>Devs atualizados</h4>
+            <p>
+              Nós promovemos treinamentos mensais a todos os nossos
+              desenvolvedores
+            </p>
+          </div>
+        </div>
+        <div class="about-description">
+          <i class="bi bi-book"></i>
+          <div>
+            <h4>Domínio das Linguagens</h4>
+            <p>
+              Nossos Devs são especializados em várias áreas da
+              progração, dominando as principais linguagens em suas especialidades
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="about-data">
+        <div class="data">
+          <i class="bi bi-person"></i>
+          <p class="number">15</p>
+          <p class="text">desenvolvedores</p>
+        </div>
+        <div class="data">
+          <i class="bi bi-check-all"></i>
+          <p class="number">789</p>
+          <p class="text">Sites Desenvolvidos</p>
+        </div>
+        <div class="data">
+          <i class="bi bi-building"></i>
+          <p class="number">789</p>
+          <p class="text">Clientes Satisfeitos</p>
+        </div>
+        <div class="data">
+          <i class="bi bi-trophy"></i>
+          <p class="number">7</p>
+          <p class="text">Prêmios empresariais</p>
+        </div>
+      </div>
     </section>
-
-    <footer>
-        <img src="" alt="">
-        <a></a>
-
-        <img src="" alt="">
-        <a></a>
-
-        <img src="" alt="">
-        <a></a>
-
-        <img src="" alt="">
-        <a></a>
-
-        <p id="copyright"></p>
+    <!-- Depoimentos -->
+    <section id="testimonials" class="text-image-section">
+      <div id="testimonial-information" class="text-container">
+        <p class="section-subtitle">Depoimentos de clientes</p>
+        <h3 class="section-title">
+          A TechCode desenvolveu meu site do jeito que queria e muito rápido, recomendo a todos.
+        </h3>
+        <div class="author">
+          <div class="author-info">
+            <p class="author-name">Jhon Doe</p>
+            <p class="author-job">CEO da Empresa X</p>
+          </div>
+          <img src="img/author_1.jpg" alt="Jhon Doe" />
+        </div>
+        <h3 class="section-title">
+          A melhor desenvolvedora web que eu já contratei, conseguimos resolver um problema no nosso site
+           e no nosso aplicativo que perdurou por meses.
+        </h3>
+        <div class="author">
+          <div class="author-info">
+            <p class="author-name">Paul Clinton</p>
+            <p class="author-job">Gerente de Projetos</p>
+          </div>
+          <img src="img/author_2.jpg" alt="Paul Clinton" />
+        </div>
+      </div>
+      <div id="testimonial-image-container" class="image-container">
+        <i class="bi bi-quote"></i>
+        <img src="img/court.jpg" alt="Advogado em um tribunal" />
+      </div>
+    </section>
+    <!-- Colaboradores -->
+    <section id="team">
+      <span class="square"></span>
+      <h2>
+        A <span>TechCode Development</span> tem um time de especialistas a sua
+        disposição
+      </h2>
+      <div class="employees">
+        <div class="employee">
+          <img src="img/mike.jpg" alt="Mike Ross" />
+          <p class="employee-name">Mike Ross</p>
+          <p class="employee-role">Desenvolvedor Front-end</p>
+        </div>
+        <div class="employee">
+          <img src="img/harvey.png" alt="Harvey Specter" />
+          <p class="employee-name">Harvey Specter</p>
+          <p class="employee-role">Desenvolvedor Back-end</p>
+        </div>
+        <div class="employee">
+          <img src="img/louis.jpg" alt="Louis Litt" />
+          <p class="employee-name">Louis Litt</p>
+          <p class="employee-role">Desenvolvedor Back-end</p>
+        </div>
+        <div class="employee">
+          <img src="img/jessica.jpg" alt="Jessica Pearson" />
+          <p class="employee-name">Jessica Pearson</p>
+          <p class="employee-role">CEO e Dev Full Stack</p>
+        </div>
+      </div>
+    </section>
+    <!-- Contato -->
+    <section id="contact" class="text-image-section">
+      <div id="contact-image-container" class="image-container">
+        <img src="img/office.jpg" alt="Advogados no escritório" />
+      </div>
+      <div id="contact-information" class="text-container">
+        <i class="bi bi-envelope"></i>
+        <p class="section-subtitle">Entre em contato</p>
+        <form>
+          <div class="form-control">
+            <input type="text" name="name" id="name" placeholder="Nome" />
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+          </div>
+          <input type="text" name="phone" id="phone" placeholder="Telefone" />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Sua mensagem..."
+          ></textarea>
+          <input type="submit" value="Enviar" class="btn" />
+        </form>
+      </div>
+    </section>
+    <!-- Rodapé -->
+    <footer id="footer">
+      <div class="contact-info">
+        <div class="footer-brand">
+          <h2>TechCode Development</h2>
+          <p>O desenvolvimento certo para o site da sua empresa</p>
+        </div>
+        <p><i class="bi bi-geo-alt"></i> Rua dos devs, 1010</p>
+        <p><i class="bi bi-telephone"></i> (99) 9999-9999</p>
+        <p><i class="bi bi-envelope"></i> contato@techcode.com</p>
+        <div class="social-networks">
+          <p>Siga-nos:</p>
+          <div class="networks">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="links-container">
+        <h4>Outros serviços</h4>
+        <nav>
+          <a href="#">Desenvolvimento de Games</a>
+          <a href="#">Desenvolvimento Web</a>
+          <a href="#">Design Gráfico</a>
+          <a href="#">Edição de Vídeo</a>
+        </nav>
+      </div>
+      <div class="links-container">
+        <h4>Páginas</h4>
+        <nav>
+          <a href="#">Termos e condições</a>
+          <a href="#">Política de privacidade</a>
+          <a href="#">Fale com um especialista</a>
+          <a href="#">FAQ</a>
+        </nav>
+      </div>
+      <div class="links-container">
+        <h4>Orçamento grátis</h4>
+        <div class="phone-number">
+          <i class="bi bi-telephone"></i>
+          <p>(99) 9999-9999</p>
+        </div>
+        <p class="phone-info">
+          Este telefone é especial para tratar de orçamentos
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
